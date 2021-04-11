@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs'); %><!-- tag de inclusão-->
+
+<body>
+	<%- include('partials/navbar.ejs'); %>
+	<div class="container">
+
+		<div class="card" id="form-perg">
+			<div class="card-header">
+				<h3>realizar perguntas</h3>
+			</div>
+			<div class="card-body">
+				<hr>
+		<form method="POST" action="/salvarpergunta" >
+			<label>Título</label>
+			<input type="text" placeholder="titulo" class="form-control" name="titulo" >
+			<label>Descrição</label>
+			<textarea placeholder="discorra sua pergunta aqui" class="form-control" name="descricao" ></textarea>
+			<br>
+			<button class="btn btn-primary">PERGUNTAR!</button>
+		</form>
+				
+			</div>
+		</div>
+
+
+
+
+		 </div>
+	
+</body>
+<%- include('partials/footer.ejs'); %>
+
